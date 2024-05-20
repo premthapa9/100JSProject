@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #2d2013;
+  position: relative;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+header {
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+  background-color: blueviolet;
+}
+main,
+section,
+.details {
+  width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.button-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  outline: 0;
+  border: 0;
+  padding: 15px;
+  cursor: pointer;
+}
+
+input {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  outline: 0;
+  border: 0;
+  font-size: 18px;
+  width: 300px;
+  padding: 10px;
+  position: relative;
+
+  border: 2px solid lightgray;
+}
+
+.submit {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 18px;
+}
+.form {
+  position: relative;
+  display: flex;
+}
+.random {
+  margin-left: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+.meals {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.5rem;
+}
+
+.srctitle {
+  text-align: center;
+  margin-bottom: 50px;
+  color: white;
+}
+
+.meal {
+  height: 200px;
+  width: 200px;
+  border: 3px solid white;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.mealinfo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.meal:hover .mealinfo {
+  opacity: 1;
+}
+
+.toast {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+.toast.show {
+  opacity: 1;
+}
+
+.toast p {
+  color: red;
+}
+.imgcont {
+  width: 500px;
+  height: 500px;
+  margin-inline: auto;
+  border: 3px solid white;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.title {
+  text-align: center;
+  margin: 20px 0;
+  color: white;
+}
+
+.cate {
+  width: 400px;
+  padding: 1rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+
+  border: 3px dotted orange;
+  margin: 10px auto;
+}
+
+.cate p {
+  color: white;
+  margin: 5px;
+
+  font-family: "Lato", sans-serif;
+}
+
+.about {
+  padding: 1rem;
+  margin: 10px auto;
+  color: white;
+  line-height: 1.2;
+}
+
+.ing {
+  text-align: center;
+  margin: 10px;
+  color: white;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  gap: 0.5rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+li {
+  display: inline-block;
+  padding: 5px 15px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
