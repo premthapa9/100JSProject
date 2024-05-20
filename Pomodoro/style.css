@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  position: relative;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.timesec {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+
+.btn {
+  cursor: pointer;
+  font-size: 18px;
+  padding: 6px 18px;
+  margin-inline: 10px;
+  outline: 0;
+  border: 0;
+  border-radius: 10px;
+  color: white;
+}
+.btn-start {
+  background-color: #149154;
+}
+
+.btn-stop {
+  background-color: #d30505;
+}
+
+.btn-reset {
+  background-color: #4c4545;
+}
+.modalout {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease-in-out;
+}
+.modalout.show {
+  display: flex;
+}
+
+.modalin {
+  padding: 2rem;
+  background-color: whitesmoke;
+  width: 400px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modalin h3 {
+  margin-top: 15px;
+}
+
+.modalin i {
+  font-size: 20px;
+  align-self: flex-end;
+  cursor: pointer;
+}
