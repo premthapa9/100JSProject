@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  position: relative;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 70px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.mynav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 3px solid grey;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.menu {
+  display: flex;
+}
+.menu li a {
+  display: inline-block;
+  padding: 5px 10px;
+  width: 150px;
+  text-align: center;
+  font-size: 20px;
+}
+li a:hover {
+  text-decoration: underline;
+}
+img {
+  height: 80px;
+  width: 80px;
+}
+p {
+  line-height: 1.5;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: url("https://cdn.pixabay.com/photo/2016/03/26/13/09/workspace-1280538_1280.jpg")
+    no-repeat center center/cover;
+}
+
+section {
+  padding: 2rem;
+}
+.mynav.active {
+  background-color: black;
+}
+
+.menu.active li a {
+  color: white;
+}
