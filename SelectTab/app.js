@@ -4,7 +4,6 @@ const allsub = document.querySelectorAll(".content");
 
 cont.addEventListener("click", (e) => {
   const id = e.target.dataset.id;
-  console.log(id);
   if (id) {
     buttons.forEach((btn) => {
       btn.classList.remove("active");
