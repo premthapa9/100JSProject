@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <title>Tab Selection Project</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <img
+          src="https://cdn.pixabay.com/photo/2024/03/20/06/18/ai-generated-8644732_1280.jpg"
+          alt="myCute Cat"
+        />
+      </div>
+      <div class="right">
+        <div class="btn-cont">
+          <button class="btn active" data-id="step1">
+            <i class="fa-solid fa-cat"></i> Cat
+          </button>
+          <button class="btn" data-id="step2">
+            <i class="fa-solid fa-dog"></i> Dog
+          </button>
+          <button class="btn" data-id="step3">
+            <i class="fa-solid fa-republican"></i> Elephant
+          </button>
+        </div>
+
+        <div class="content active" id="step1">
+          <h1>Cat Fact</h1>
+          <p>
+            Cats have a hilarious reflex known as the "cat righting reflex."
+            This allows them to almost always land on their feet when they fall.
+            What's even funnier is that cats can use this reflex to twist their
+            bodies mid-air, making them look like little furry acrobats when
+            they take an unexpected tumble.
+          </p>
+        </div>
+        <div class="content" id="step2">
+          <h1>Dog Fact</h1>
+          <p>
+            Some dogs have a habit called "zoomies" where they suddenly get a
+            burst of energy and start running around wildly. This behavior,
+            officially known as Frenetic Random Activity Periods (FRAPs), is
+            common in dogs and can be hilarious to watch as they dart around
+            with seemingly boundless joy.
+          </p>
+        </div>
+        <div class="content" id="step3">
+          <h1>Elephant</h1>
+          <p>
+            Elephants have a very playful side, especially when it comes to
+            water. They love to swim and often use their trunks as snorkels.
+            Watching an elephant frolic in the water and playfully spray water
+            everywhere with their trunk is a delightful and funny sight!
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #fc93e4;
+  height: 100vh;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+.container {
+  width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border: 5px solid grey;
+  border-radius: 10px;
+  padding: 1rem;
+}
+.left {
+  flex: 1;
+}
+.left img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.right {
+  flex: 1;
+  background-color: #eaa24d;
+  border-radius: 10px;
+}
+.btn-cont {
+  display: flex;
+}
+
+.btn {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  padding: 15px;
+  font-size: 20px;
+  background-color: #4ca0fb;
+  cursor: pointer;
+}
+
+button:first-child {
+  border-top-left-radius: 10px;
+}
+
+button:last-child {
+  border-top-right-radius: 10px;
+}
+
+.btn:hover {
+  background-color: #46547b;
+}
+.content {
+  padding: 2rem;
+  display: none;
+}
+
+.content.active {
+  display: block;
+}
+
+.btn.active {
+  background-color: #eaa24d;
+}
+
+p {
+  margin-top: 10px;
+}
