@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  height: 100vh;
+  background-image: radial-gradient(
+      50% 123.47% at 50% 50%,
+      #00ff94 0%,
+      #720059 100%
+    ),
+    linear-gradient(121.28deg, #669600 0%, #ff0000 100%),
+    linear-gradient(360deg, #0029ff 0%, #8fff00 100%),
+    radial-gradient(100% 164.72% at 100% 100%, #6100ff 0%, #00ff57 100%),
+    radial-gradient(100% 148.07% at 0% 0%, #fff500 0%, #51d500 100%);
+  background-blend-mode: screen, color-dodge, overlay, difference, normal;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  background-image: linear-gradient(rgb(200, 223, 83), rgb(227, 239, 169));
+
+  width: 400px;
+  padding: 1rem;
+  border: 0;
+  outline: 0;
+  border-radius: 10px;
+}
+
+.container h1 {
+  margin: 20px auto;
+  text-align: center;
+}
+
+label {
+  font-size: 20px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 2px solid grey;
+  outline: 0;
+  margin-bottom: 25px;
+}
+
+#kgitem {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.error {
+  color: red;
+  margin: 10px 0;
+  text-transform: capitalize;
+  display: none;
+}
+
+.error.show {
+  display: block;
+}
