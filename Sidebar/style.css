@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  position: relative;
+  height: 100vh;
+  background-image: linear-gradient(315deg, #d5ddf8, #fff 57%);
+  background-repeat: no-repeat;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  height: 60px;
+  width: 60px;
+}
+
+.ham {
+  position: absolute;
+  top: 40px;
+  right: 50px;
+  padding: 5px;
+  color: #f46626;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.ham:hover {
+  color: black;
+}
+aside {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: whitesmoke;
+  width: 300px;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+}
+
+.logo {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo i {
+  font-size: 25px;
+  color: #f46626;
+  cursor: pointer;
+}
+.logo i:hover {
+  color: black;
+}
+
+aside.hide {
+  transform: translateX(0);
+}
+
+.menu li {
+  transition: all 0.5s ease;
+}
+
+.menu li:hover {
+  background-color: #f46626;
+}
+
+.menu li a {
+  display: inline-block;
+  font-size: 30px;
+  width: 100%;
+  padding: 1rem;
+  transition: all 0.5s ease;
+}
+.menu li a:hover {
+  padding-left: 25px;
+}
