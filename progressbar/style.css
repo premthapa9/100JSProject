@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: yellow;
+  height: 100vh;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+.container {
+  text-align: center;
+}
+.progress-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 800px;
+}
+.progress-bar-back {
+  height: 4px;
+  width: 100%;
+  background-color: lightgray;
+  position: absolute;
+  top: 50%;
+  z-index: -1;
+  transform: translateY(-50%);
+}
+
+.progress-bar-front {
+  height: 4px;
+  width: 0%;
+  background-color: green;
+  position: absolute;
+  top: 50%;
+  z-index: -1;
+  transform: translateY(-50%);
+  transition: all 0.4s linear;
+}
+
+.step {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+  border: 4px solid lightgray;
+  transition: all 0.4s linear;
+}
+.step.checked {
+  border-color: green;
+}
+
+.step.checked small {
+  position: absolute;
+  color: green;
+  bottom: -25px;
+  font-family: cursive;
+}
+.btn {
+  cursor: pointer;
+  padding: 10px 20px;
+  outline: 0;
+  border: 0;
+  border-radius: 5px;
+  background-color: blueviolet;
+  margin: 75px 15px 0;
+  transition: all 0.4s ease-in;
+}
+
+.btn:hover {
+  background-color: cadetblue;
+}
+.btn:active {
+  transform: scale(0.97);
+}
+.btn:disabled {
+  background-color: lightgray;
+}
