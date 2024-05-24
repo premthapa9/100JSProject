@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poetsen One", sans-serif;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #0c84bb;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  width: 400px;
+  background-color: white;
+
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.month {
+  padding: 1rem;
+  background-color: #ed5a27;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-size: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.weekday {
+  font-size: 30px;
+  color: grey;
+  margin: 15px 0;
+}
+
+.today {
+  font-size: 56px;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.year {
+  font-size: 30px;
+  color: grey;
+  text-align: center;
+  margin: 15px;
+}
