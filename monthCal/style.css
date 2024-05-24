@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  height: 100vh;
+  background-color: #0e65d2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+.container {
+  background-color: #e46d28;
+  width: 500px;
+  text-align: center;
+  border-radius: 10px;
+  min-width: 500px;
+}
+.firstcont {
+  background-color: #08a9f9;
+  padding: 2rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  justify-content: space-evenly;
+}
+
+.month {
+  margin: 10px 0;
+}
+.weekdays {
+  display: flex;
+  background-color: black;
+}
+.weekdays div {
+  flex: 1;
+  padding: 10px 4px;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+}
+
+.cale {
+  display: grid;
+  background-color: black;
+  padding-bottom: 10px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 4px;
+  grid-template-columns: repeat(7, 1fr);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.cale div {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: grey;
+}
+
+.cale div:hover {
+  border: 2px solid grey;
+}
+
+.today {
+  background-color: #08a9f9;
+  color: white;
+}
