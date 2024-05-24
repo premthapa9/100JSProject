@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  height: 100vh;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  width: 400px;
+  background-color: #108a9c;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 2rem;
+  border-radius: 10px;
+  color: white;
+  line-height: 1.4;
+}
+
+input {
+  width: 100%;
+  padding: 16px;
+  font-size: 20px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  outline: 0;
+  border: 0;
+}
+
+input:focus {
+  outline: 1;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  transition: all 0.4s ease;
+  margin-top: 20px;
+}
+
+input[type="submit"]:active {
+  transform: scale(0.97);
+}
+
+.error {
+  letter-spacing: 2px;
+  margin-top: 10px;
+}
+
+.mand {
+  color: red;
+
+  font-size: 25px;
+}
+label {
+  display: flex;
+  margin-top: 15px;
+}
+label p {
+  margin-left: 3px;
+}
+
+h2 {
+  margin-top: 15px;
+}
