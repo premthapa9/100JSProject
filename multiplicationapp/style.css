@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #f7b824;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  width: 400px;
+  line-height: 1.8;
+  padding: 1.5rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.container p {
+  align-self: flex-end;
+  font-style: italic;
+  color: green;
+  font-size: 17px;
+}
+
+form {
+  width: 100%;
+}
+input {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 25px;
+  outline: 0;
+  border: 3px solid grey;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  outline: 0;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: bold;
+  font-style: oblique;
+  transition: all 0.5s ease;
+}
+
+input[type="submit"]:hover {
+  transform: scale(0.97);
+}
+.form p {
+  text-align: center;
+  color: red;
+}
