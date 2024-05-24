@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0e65d2;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.xsection,
+.ysection {
+  margin: 30px;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+}
+
+.title {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.countx,
+.county {
+  border: 2px solid white;
+  border-radius: 5px;
+  height: 200px;
+  width: 200px;
+  font-size: 60px;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
