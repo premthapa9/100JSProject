@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #74ccf4;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+.container {
+  width: 400px;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.feedcont {
+  display: flex;
+  margin-top: 15px;
+  justify-content: space-around;
+  width: 100%;
+}
+.feed div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  border-radius: 5px;
+}
+
+i {
+  font-size: 55px;
+  color: yellow;
+  margin-bottom: 10px;
+}
+
+.feed div:hover {
+  background-color: #60b77c;
+  cursor: pointer;
+}
+.feed:hover p {
+  color: white;
+}
+
+input {
+  visibility: hidden;
+}
+
+input:checked + div {
+  background-color: #60b77c;
+}
+
+.feed.active div {
+  background-color: #60b77c;
+}
+
+input:checked + div p {
+  color: white;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 8px 15px;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  background-color: #064d4b;
+  color: white;
+  border-radius: 5px;
+}
+
+strong {
+  margin-bottom: 25px;
+  text-transform: capitalize;
+}
+
+p {
+  text-align: center;
+}
